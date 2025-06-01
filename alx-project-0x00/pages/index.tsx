@@ -11,7 +11,7 @@ const Home: React.FC = () => {
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
                     <span className="block">Welcome to</span>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">
-                        LuxeStays
+                        Airbnb Application Clone system
                     </span>
                 </h1>
                 <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-indigo-100">
