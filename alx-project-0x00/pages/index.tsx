@@ -8,11 +8,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="relative z-10 text-center px-4">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">
-                        Airbnb Application Clone System
-                    </span>
-                </h1>
+                <h1>Airbnb Application Clone system</h1>
                 <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-indigo-100">
                     Discover premium vacation rentals with world-class amenities and unforgettable experiences
                 </p>
