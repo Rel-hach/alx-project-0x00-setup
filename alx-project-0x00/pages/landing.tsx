@@ -23,17 +23,21 @@ const Landing: React.FC = () => {
             </div>
 
             {/* Call to Action */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
                 <Button 
-                    title="Explore All Properties" 
-                    size="large" 
-                    shape="pill" 
+                    title="Check Availability" 
+                    size="medium" 
+                    shape="rounded-sm"
                 />
                 <Button 
-                    title="Contact Host" 
-                    size="large" 
-                    shape="pill" 
-                    variant="secondary"
+                    title="Book Now" 
+                    size="medium" 
+                    shape="rounded-md"
+                />
+                <Button 
+                    title="$120/night" 
+                    size="medium" 
+                    shape="rounded-full"
                 />
             </div>
         </div>
