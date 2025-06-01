@@ -1,26 +1,47 @@
-// Button component
-const Button: React.FC<ButtonProps> = ({ title, size, shape }) => {
-    const sizeClasses = {
-        small: 'px-4 py-2 text-sm',
-        medium: 'px-6 py-3 text-base',
-        large: 'px-8 py-4 text-lg',
-    };
+import React from 'react';
+import Card from '@/components/Card';
+import Button from '@/components/Button';
 
-    const shapeClasses = {
-        'rounded-sm': 'rounded-sm',
-        'rounded-md': 'rounded-md',
-        'rounded-full': 'rounded-full',
-    };
+const Landing: React.FC = () => {
+    return (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 rounded-lg bg-white shadow-lg">
+            {/* Hero Section */}
+            <div className="text-center mb-16">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Discover Your Perfect Stay
+                </h1>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Luxury villas, cozy apartments, and unique homes for your next adventure
+                </p>
+            </div>
 
-    const className = `
-        bg-gradient-to-r from-indigo-500 to-purple-600 
-        text-white font-medium
-        ${sizeClasses[size]}
-        ${shapeClasses[shape]}
-        shadow-md hover:shadow-lg
-        transition-all duration-200
-        hover:from-indigo-600 hover:to-purple-700
-    `;
+            {/* Property Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <Card />
+                <Card />
+                <Card />
+            </div>
 
-    return <button className={className}>{title}</button>;
+            {/* Call to Action */}
+            <div className="flex flex-wrap justify-center gap-4">
+                <Button 
+                    title="Check Availability" 
+                    size="medium" 
+                    shape="rounded-sm"
+                />
+                <Button 
+                    title="Book Now" 
+                    size="medium" 
+                    shape="rounded-md"
+                />
+                <Button 
+                    title="$120/night" 
+                    size="medium" 
+                    shape="rounded-full"
+                />
+            </div>
+        </div>
+    );
 };
+
+export default Landing;
